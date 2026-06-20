@@ -1,0 +1,26 @@
+# Игровой мир (огромный, меняется постоянно)
+world/
+world_nether/
+world_the_end/
+
+# Логи и временные файлы
+logs/
+crash-reports/
+*.log
+*.pid
+
+# Настройки сервера с секретами
+server.properties
+whitelist.json
+ops.json
+banned-players.json
+
+# Бэкапы
+backups/
+*.zip
+*.rar
+
+# Файлы IDE
+.vscode/
+.idea/
+*.iml

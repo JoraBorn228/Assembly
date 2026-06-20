@@ -24,3 +24,13 @@ backups/
 .vscode/
 .idea/
 *.iml
+
+# Запрещённые имена Windows
+nul
+NUL
+client/nul
+client/NUL
+server/nul
+server/NUL
+**/nul
+**/NUL

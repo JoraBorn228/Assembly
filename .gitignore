@@ -33,4 +33,4 @@ client/NUL
 server/nul
 server/NUL
 **/nul
-**/NUL
+**/NUL.env

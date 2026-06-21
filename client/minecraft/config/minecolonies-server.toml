@@ -1,0 +1,189 @@
+#Все настройки, связанные с основным игровым процессом
+[gameplay]
+	#Количество начальных жителей. blockui.config.default.number
+	# Default: 4
+	# Range: 1 ~ 10
+	initialcitizenamount = 4
+	#Могут ли игроки размещать бесконечное количество лагерей/кораблей снабжения? blockui.config.default.boolean
+	allowinfinitesupplychests = false
+	#Разрешено ли игрокам покидать свои колонии, чтобы легко создавать новые? Примечание: Может вызвать баги! blockui.config.default.boolean
+	allowinfinitecolonies = false
+	#Разрешить колонии в других мирах? blockui.config.default.boolean
+	allowotherdimcolonies = true
+	#Максимальное число жителей в одной колонии. blockui.config.default.number
+	# Default: 250
+	# Range: 25 ~ 500
+	maxcitizenpercolony = 250
+	#Включить функции разработчика (могут возникнуть баги)? blockui.config.default.boolean
+	enableindevelopmentfeatures = false
+	#Должны ли быть отрисованы имена жителей? blockui.config.default.boolean
+	alwaysrendernametag = true
+	#Работают ли жители во время дождя? blockui.config.default.boolean
+	workersalwaysworkinrain = false
+	#Шансы Шахтера получить руду при добыче булыжника или камня (по умолчанию, можно увеличить с помощью датапаков на другие материалы). В %. (Чтобы изменить список руд, которые может найти Шахтер, см. "Список Счастливых Руд".) blockui.config.default.number
+	# Default: 1
+	# Range: 0 ~ 100
+	luckyblockchance = 1
+	#Минимальный уровень Ратуши, необходимый, чтобы разрешить телепортацию к союзным колониям. blockui.config.default.number
+	# Default: 3
+	# Range: 0 ~ 5
+	minthleveltoteleport = 3
+	#Модификатор потребления пищи. blockui.config.default.number
+	# Default: 1.0
+	# Range: 0.1 ~ 100.0
+	foodmodifier = 1.0
+	#Частота болезней. 1 = Очень частые, 100 = чрезвычайно редкие. blockui.config.default.number
+	# Default: 5
+	# Range: 1 ~ 100
+	diseasemodifier = 5
+	#Если часть колонии загружена владельцем/сотрудником, должна ли колония оставаться загруженной? (Установите количество загружаемых кусков с помощью параметра "Строгость загрузки частей колонии"). blockui.config.default.boolean
+	forceloadcolony = true
+	#Устанавливает, как долго чанки остаются загруженными после того, как игрок покидает игру. По умолчанию: 10 минут blockui.config.default.number
+	# Default: 10
+	# Range: 1 ~ 1440
+	loadtime = 10
+	#Это контролирует, сколько блоков загружается с опцией «Загрузка чанков колонии». Чем выше это значение, тем меньше чанков будет загружено. (Внутренние чанки будут загружены первыми.) 1 = загрузить все занятые чанки. blockui.config.default.number
+	# Default: 3
+	# Range: 1 ~ 15
+	colonyloadstrictness = 3
+	#Максимальное количество брёвен в одном дереве, которое лесоруб может проверить во время поиска дерева. blockui.config.default.number
+	# Default: 400
+	# Range: 1 ~ 1000
+	maxtreesize = 400
+	#Отключает ограничения на размещение лагерей снабжения, предназначенные для парящих миров и подобных blockui.config.default.boolean
+	nosupplyplacementrestrictions = false
+	#Рейдеры будут появляться в небе, если эта функция включена blockui.config.default.boolean
+	skyraiders = false
+
+#Вся конфигурация, относящаяся к системе исследований
+[research]
+	#Позволяет автоматически и (почти) мгновенно завершать исследования для игроков в творческом режиме. Если false, творческие игроки все равно смогут начать исследования, но будут иметь нормальные темпы прогресса. blockui.config.default.boolean
+	researchcreativecompletion = true
+	#Значительно увеличивает количество информации, связанной с исследовательскими датапаками, которая регистрируется во время загрузки мира. blockui.config.default.boolean
+	researchdebuglog = false
+	#Список предметов, которые нужно тратить игрокам при отмене уже завершенного исследования.
+	researchresetcost = ["minecolonies:ancienttome:1"]
+
+#Все конфигурации, связанные с командами MineColonies
+[commands]
+	#Могут ли игроки использовать команду /mc rtp? blockui.config.default.boolean
+	canplayerusertpcommand = false
+	#Могут ли игроки использовать команду /mc colony teleport? blockui.config.default.boolean
+	canplayerusecolonytpcommand = false
+	#Могут ли игроки телепортироваться в колонии союзников? blockui.config.default.boolean
+	canplayeruseallytownhallteleport = true
+	#Позволять ли игрокам использовать команду /mc home? Примечание: ее могут использовать только владельцы колонии. blockui.config.default.boolean
+	canplayerusehometpcommand = false
+	#Позволить игроку использовать команду /mc colony info command? blockui.config.default.boolean
+	canplayeruseshowcolonyinfocommand = true
+	#Позволить игроку использовать команду /mc citizens kill? blockui.config.default.boolean
+	canplayerusekillcitizenscommand = false
+	#Разрешить ли игрокам использовать команду /mc citizens modify? blockui.config.default.boolean
+	canplayerusemodifycitizenscommand = false
+	#Позволить игроку использовать команду /mc colony addOfficer? blockui.config.default.boolean
+	canplayeruseaddofficercommand = true
+	#Позволить игроку использовать команду /mc colony delete? blockui.config.default.boolean
+	canplayerusedeletecolonycommand = false
+	#Позволить игроку использовать команду /mc colony requestsystem-reset? blockui.config.default.boolean
+	canplayeruseresetcommand = false
+
+#Вся конфигурация, относящиеся к требованиям колонии
+[claims]
+	#minecolonies.config.maxColonySize.comment blockui.config.default.number
+	# Default: 20
+	# Range: 1 ~ 250
+	maxColonySize = 20
+	#minecolonies.config.minColonyDistance.comment blockui.config.default.number
+	# Default: 8
+	# Range: 1 ~ 200
+	minColonyDistance = 8
+	#minecolonies.config.initialColonySize.comment blockui.config.default.number
+	# Default: 4
+	# Range: 1 ~ 15
+	initialColonySize = 4
+	#Максимальное расстояние (в блоках) от мирового спауна для колонии. blockui.config.default.number
+	# Default: 30000
+	# Range: > 1000
+	maxdistancefromworldspawn = 30000
+	#Минимальное расстояние (в блоках) от мирового спауна для колонии. blockui.config.default.number
+	# Default: 0
+	# Range: 0 ~ 1000
+	mindistancefromworldspawn = 0
+
+#Вся конфигурация боевых элементов MineColonies
+[combat]
+	#minecolonies.config.dobarbariansspawn.comment blockui.config.default.boolean
+	dobarbariansspawn = true
+	#minecolonies.config.barbarianhordedifficulty.comment blockui.config.default.number
+	# Default: 5
+	# Range: 0 ~ 10
+	barbarianhordedifficulty = 5
+	#minecolonies.config.maxBarbarianSize.comment blockui.config.default.number
+	# Default: 80
+	# Range: 6 ~ 400
+	maxBarbarianSize = 80
+	#minecolonies.config.dobarbariansbreakthroughwalls.comment blockui.config.default.boolean
+	dobarbariansbreakthroughwalls = true
+	#Среднее количество ночей между рейдами. blockui.config.default.number
+	# Default: 14
+	# Range: 1 ~ 50
+	averagenumberofnightsbetweenraids = 14
+	#Минимальное количество ночей между рейдами. blockui.config.default.number
+	# Default: 10
+	# Range: 1 ~ 30
+	minimumnumberofnightsbetweenraids = 10
+	#Должны ли мобы нападать на жителей? blockui.config.default.boolean
+	mobattackcitizens = true
+	#minecolonies.config.shouldraiderbreakdoors.comment blockui.config.default.boolean
+	shouldraiderbreakdoors = true
+	#Множитель урона для Рыцарей стражи. blockui.config.default.number
+	# Default: 1.0
+	# Range: 0.1 ~ 15.0
+	guardDamageMultiplier = 1.0
+	#Множитель здоровья для всех стражников. blockui.config.default.number
+	# Default: 1.0
+	# Range: 0.1 ~ 5.0
+	guardhealthmult = 1.0
+	#Включить PVP режим (колонии могут быть разрушены и разграблены при выполнении определенных условий). blockui.config.default.boolean
+	pvp_mode = false
+
+#Все параметры настроек доступа
+[permissions]
+	#Включить защиту колоний? blockui.config.default.boolean
+	enablecolonyprotection = true
+	#Независимо от защиты колонии, следует ли выключать взрывы внутри колоний? "Нет урона" полностью отключает взрывы. "Урон только по игрокам" позволяет взрывам наносить урон игрокам и враждебным мобам, но не блокам и нейтральным или дружелюбным мобам. "Урон существам" позволяет наносить урон всем мобам. "Урон всему" позволяет наносить урон всем мобам и блокам. blockui.config.default.enum
+	#Allowed Values: DAMAGE_NOTHING, DAMAGE_PLAYERS, DAMAGE_ENTITIES, DAMAGE_EVERYTHING
+	turnoffexplosionsincolonies = "DAMAGE_ENTITIES"
+	#Отключает систему прав колонии для игроков с указанным уровнем доступа. blockui.config.default.number
+	# Default: 2
+	# Range: 0 ~ 4
+	permissioneventbypassminpermlevel = 2
+
+#Все настройки, связанные с совместимостью мода
+[compatibility]
+	#При загрузке рецептов генерируйте CSV-файлы аудита, чтобы помочь в отладке пакетов данных или дополнительных модов. blockui.config.default.boolean
+	auditcraftingtags = false
+	#Включить отладку инвентаря. blockui.config.default.boolean
+	debuginventories = false
+	#Включите это, если вы используете этот мир для создания и сканирования чертежей. blockui.config.default.boolean
+	blueprintbuildmode = false
+
+#Все настройки, связанные с поиском пути
+[pathfinding]
+	#Детализация отладочных сообщений поиска пути. blockui.config.default.number
+	# Default: 0
+	# Range: 0 ~ 10
+	pathfindingdebugverbosity = 0
+	#Минимальное число последовательных рельс для жителей, которыми они могут пользоваться. blockui.config.default.number
+	# Default: 8
+	# Range: 5 ~ 100
+	minimumrailstopath = 8
+	#Количество дополнительных потоков, которые будут использоваться для поиска пути. blockui.config.default.number
+	# Default: 1
+	# Range: 1 ~ 10
+	pathfindingmaxthreadcount = 1
+
+#minecolonies.config.requestSystem.comment
+[requestSystem]
+	#Должна ли система запросов творчески подходить к решению (если возможно), когда игроку требуется решить запрос? Это инструмент отладки и он может занять много времени для решения запроса. blockui.config.default.boolean
+	creativeresolve = false

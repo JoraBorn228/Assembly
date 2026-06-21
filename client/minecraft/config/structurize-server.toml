@@ -1,0 +1,42 @@
+#All configuration items related to the core gameplay
+[gameplay]
+	#Should the default schematics be ignored (from the jar)? blockui.config.default.boolean
+	ignoreSchematicsFromJar = false
+	#Should player-made schematics be allowed? blockui.config.default.boolean
+	allowPlayerSchematics = false
+	#Max world operations per tick (max blocks to place, remove, or replace). blockui.config.default.number
+	# Default: 1000
+	# Range: 0 ~ 100000
+	maxOperationsPerTick = 1000
+	#Max amount of undos saved. A higher number requires more memory. blockui.config.default.number
+	# Default: 50
+	# Range: 0 ~ 250
+	maxCachedChanges = 50
+	#Max amount of schematics to be cached on the server. blockui.config.default.number
+	# Default: 100
+	# Range: 0 ~ 100000
+	maxCachedSchematics = 100
+	#Max amount of blocks checked by a possible worker. blockui.config.default.number
+	# Default: 1000
+	# Range: 0 ~ 100000
+	maxBlocksChecked = 1000
+	#How many block at most can be inside one scanned blueprint. blockui.config.default.number
+	# Default: 100000
+	# Range: 1000 ~ 1000000
+	schematicBlockLimit = 100000
+	#Currently supports 'default', 'inwardcircle', 'hilbert', 'random' and 'inwardcircleheight1' to 'inwardcircleheight4' blockui.config.default.string
+	iteratorType = "default"
+
+#Configuration related to scan tool teleportation
+[teleport]
+	#If creative-mode players can use the scan tool to teleport to/from their builds. blockui.config.default.boolean
+	teleportAllowed = true
+	#When teleporting to a build, land on this side of it. blockui.config.default.enum
+	#Allowed Values: DOWN, UP, NORTH, SOUTH, WEST, EAST
+	teleportBuildDirection = "SOUTH"
+	#When teleporting to a build, land this far away from it. blockui.config.default.number
+	# Default: 3
+	# Range: 1 ~ 16
+	teleportBuildDistance = 3
+	#Allow teleporting a little distance away if the landing area is blocked; disable to teleport exactly to target. blockui.config.default.boolean
+	teleportSafety = true

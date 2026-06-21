@@ -1,0 +1,9 @@
+#Все настройки, связанные с основным игровым процессом
+[gameplay]
+	#Можно ли генерировать корабли снабжения и лагеря в сундуках с награбленным добром. blockui.config.default.boolean
+	generatesupplyloot = true
+
+#Все настройки, связанные с системой запросов
+[requestsystem]
+	#Следует ли системе запросов отображать отладочную информацию в debug.log? Полезно при сбоях. blockui.config.default.boolean
+	enabledebuglogging = false

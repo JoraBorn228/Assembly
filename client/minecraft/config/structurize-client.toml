@@ -1,0 +1,24 @@
+#Blueprint related settings
+[blueprint]
+
+	#Affects all previews
+	[blueprint.renderer]
+		#If disabled show placeholders as normal blocks, if enabled render: any (light) -> nothing, fluid (blue) -> dimension default fluid, solid (brown) -> worldgen block, tag (transparent) -> content block. Fluid and solid only work in singleplayer/for LAN owner, else it's just best guess. Currently without auto-updating blockui.config.default.boolean
+		render_placeholders_nice = false
+		#Enabling this will send most of your active previews to nearby players blockui.config.default.boolean
+		share_previews = false
+		#Once enabled you will see previews from other players within sensible distance blockui.config.default.boolean
+		see_shared_previews = false
+		#-1 for same as current vanilla world, 0 to 15 (min to max) for static light level blockui.config.default.number
+		# Default: 15
+		# Range: -1 ~ 15
+		light_level = 15
+		#From 0 (transparent) to 1 (opaque). ALPHA FEATURE, reported bugs may not receive fix. (Minus values also mean disabled) blockui.config.default.number
+		# Default: -1.0
+		# Range: -1.0 ~ 1.0
+		transparency = -1.0
+
+#All configuration items related to the core gameplay
+[gameplay]
+	#Sneak+scroll on the hotbar switches scan tool slots blockui.config.default.boolean
+	scan_tool_scrolling = false
